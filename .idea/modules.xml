@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Tareas en clase/Tarea en clase  1/BibliotecaFacultad/BibliotecaFacultad.iml" filepath="$PROJECT_DIR$/Tareas en clase/Tarea en clase  1/BibliotecaFacultad/BibliotecaFacultad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tareas en clase/Tarea en clase  1/Calculadora/Calculadora.iml" filepath="$PROJECT_DIR$/Tareas en clase/Tarea en clase  1/Calculadora/Calculadora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Temas/Tema 0 - Repaso Java/tema0-RepasoJava/Figuras/Figuras.iml" filepath="$PROJECT_DIR$/Temas/Tema 0 - Repaso Java/tema0-RepasoJava/Figuras/Figuras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Temas/Tema 0 - Repaso Java/tema0-RepasoJava/HolaMundo/HolaMundo.iml" filepath="$PROJECT_DIR$/Temas/Tema 0 - Repaso Java/tema0-RepasoJava/HolaMundo/HolaMundo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Temas/Tema 0 - Repaso Java/tema0-RepasoJava/Persona/Persona.iml" filepath="$PROJECT_DIR$/Temas/Tema 0 - Repaso Java/tema0-RepasoJava/Persona/Persona.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SistemasDistribuidosBSPO.iml" filepath="$PROJECT_DIR$/.idea/SistemasDistribuidosBSPO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tareas/Tareas.iml" filepath="$PROJECT_DIR$/Tareas/Tareas.iml" />
+    </modules>
+  </component>
+</project>
