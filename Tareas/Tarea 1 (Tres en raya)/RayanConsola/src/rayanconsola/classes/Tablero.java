@@ -3,6 +3,7 @@ package rayanconsola.classes;
 import rayanconsola.classes.condicones.Condicion;
 import rayanconsola.interfaces.ICondicion;
 
+import javax.swing.*;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -93,6 +94,7 @@ public class Tablero {
                         );
                         condicion.verificarCondicion(this);
                         this.cambiarJugador();
+                        this.esEmpate();
                         isValid = true;
                     }
                 }
@@ -112,7 +114,7 @@ public class Tablero {
 
     private void setJugadorActual() {
         Random rand = new Random();
-        int jugador = rand.nextInt(1);
+        int jugador = rand.nextInt(2);
         if (jugador == 1) {
             jugadorActual = jugadorX;
             return;
@@ -134,7 +136,26 @@ public class Tablero {
         }
         return valor;
     }
-    public char getValor(int i, int j){
+
+    private void esEmpate() {
+        int contadorVacio = 0;
+
+        for (int i = 0; i < tablero.length; i++) {
+            for (int j = 0; j < tablero[0].length; j++) {
+                if (tablero[i][j] != '*') {
+                    contadorVacio++;
+                }
+            }
+        }
+        System.out.println("Aui testeo");
+        int casillas = tablero.length * tablero[0].length;
+        if (contadorVacio >= (casillas)) {
+            System.out.println("Es empate!!!");
+            System.exit(0);
+        }
+    }
+
+    public char getValor(int i, int j) {
         return this.tablero[i][j];
     }
 }

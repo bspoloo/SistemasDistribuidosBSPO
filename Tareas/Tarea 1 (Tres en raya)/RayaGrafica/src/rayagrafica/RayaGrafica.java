@@ -4,6 +4,7 @@
  */
 package rayagrafica;
 
+import rayagrafica.classes.CondicionesManger;
 import rayagrafica.classes.Jugador;
 
 import java.text.Normalizer.Form;
@@ -23,9 +24,11 @@ public class RayaGrafica {
         Tablero tablero = new Tablero();
         Jugador jugadorX = new Jugador("X");
         Jugador jugadorO = new Jugador("O");
+        CondicionesManger condicionesManger = new CondicionesManger();
         tablero.setJugadorX(jugadorX);
         tablero.setJugadorO(jugadorO);
+        tablero.setJugadorActual();
+        tablero.setCondicionesManger(condicionesManger);
         tablero.show();
     }
-    
 }
