@@ -13,7 +13,7 @@ public class Condicion implements ICondicion {
     @Override
     public void verificarCondicion(Tablero tablero) {
         int contadorCorrectos = 0;
-        System.out.println(this.posicion.length + " " + this.posicion[0].length);
+
         for (int[] ints : this.posicion) {
             for (int j = 0; j < this.posicion[0].length; j++) {
                 char valor = tablero.getValorPoscion(ints[j]);
