@@ -9,6 +9,7 @@ import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.List;
 import primerparcial.clientes.ClienteBancosUPD;
+import primerparcial.clientes.ClienteSEGIP;
 import primerparcial.enums.Banco;
 import primerparcial.interfaces.IASFI;
 import primerparcial.interfaces.IJusticia;
@@ -25,17 +26,23 @@ public class Justicia extends UnicastRemoteObject implements IJusticia {
 
     @Override
     public Respuesta consultarCuentas(String ci, String nombres, String apellidos) throws RemoteException {
-        
-        String respuesta = ClienteBancosUPD.consultarCuentas(ci, nombres, apellidos);
-        String[] cuentasText = respuesta.split(":");
-        List<Cuenta> cuentas = new ArrayList<>();
-        for (int i = 0; i < cuentasText.length; i++) {
-            String nro_cuenta = cuentasText[i].split("-")[0];
-            String saldo = cuentasText[i].split("-")[1];
-            Cuenta cuenta = new Cuenta(ci, nombres, apellidos, nro_cuenta, Double.parseDouble(saldo), Banco.BancoBCP);
-            cuentas.add(cuenta);
+
+        String data = ClienteSEGIP.consultarCuentas(ci, nombres, apellidos);
+        String resultado = data.split(":")[1];
+        if (resultado.equals("encontrado")) {
+            String respuesta = ClienteBancosUPD.consultarCuentas(ci, nombres, apellidos);
+            String[] cuentasText = respuesta.split(":");
+            List<Cuenta> cuentas = new ArrayList<>();
+            for (int i = 0; i < cuentasText.length; i++) {
+                String nro_cuenta = cuentasText[i].split("-")[0];
+                String saldo = cuentasText[i].split("-")[1];
+                Cuenta cuenta = new Cuenta(ci, nombres, apellidos, nro_cuenta, Double.parseDouble(saldo), Banco.BancoBCP);
+                cuentas.add(cuenta);
+            }
+            Respuesta response = new Respuesta(true, apellidos, cuentas);
+            return response;
+        } else {
+            return new Respuesta(false, "Error usuario con ci " + ci + " no encontrado", null);
         }
-        Respuesta response = new Respuesta(true, apellidos, cuentas);
-        return response;
     }
 }

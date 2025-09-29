@@ -33,19 +33,19 @@ public class ServidorBancoBCP {
                 String ci = data.split("-")[0];
                 String nombres = data.split("-")[1];
                 String apellidos = data.split("-")[2];
-                
+
                 String response = "";
                 if (protocolo.equals("Buscar")) {
                     System.out.println("--------SERVIDOR BANCO BCP----------");
                     System.out.println("ci: " + ci);
                     System.out.println("nombres: " + nombres);
                     System.out.println("apellidos: " + apellidos);
-                    
+
                     response = "1115-5200:657654-6000";
-                }else {
+                } else {
                     System.out.println("Error en el servidor");
                 }
-                
+
                 byte[] mensaje = response.getBytes();
 
                 DatagramPacket respuesta = new DatagramPacket(mensaje, response.length(), peticion.getAddress(), peticion.getPort());

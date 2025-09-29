@@ -38,8 +38,12 @@ public class Juez {
 
             Respuesta respuesta = justicia.consultarCuentas(ci, nombres, apellidos);
             System.out.println("--------RESPUESTA--------");
-            for (Cuenta cuenta : respuesta.getCuentas()) {
-                System.out.println(cuenta.getBanco() + " " + cuenta.getNro_cuenta() + " " + cuenta.getSaldo());
+            if (respuesta.getCuentas() == null) {
+                System.out.println("No hay cuentas por mostrar!!!");
+            } else {
+                for (Cuenta cuenta : respuesta.getCuentas()) {
+                    System.out.println(cuenta.getBanco() + " " + cuenta.getNro_cuenta() + " " + cuenta.getSaldo());
+                }
             }
         } catch (RemoteException e) {
             System.getLogger(ServidorASFI.class.getName()).log(System.Logger.Level.ERROR, (String) null, e);

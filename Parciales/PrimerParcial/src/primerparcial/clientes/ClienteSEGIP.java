@@ -20,11 +20,11 @@ import java.net.Socket;
 public class ClienteSEGIP {
 
     public static String consultarCuentas(String ci, String nombres, String apellidos) {
-        int port = 6001;
+        int port = 5551;
         try {
             System.out.println("------CLIENTE BANCO SEGIP------------");
-            Socket client = new Socket("localhost", port);
-            String data = "buscar:" + ci + "-" + nombres + "-" + apellidos;
+            Socket client = new Socket("10.221.246.187", port);
+            String data = "Buscar:" + ci + "-" + nombres + "-" + apellidos;
             PrintStream toServer = new PrintStream(client.getOutputStream());
             BufferedReader fromServer = new BufferedReader(new InputStreamReader(client.getInputStream()));
 

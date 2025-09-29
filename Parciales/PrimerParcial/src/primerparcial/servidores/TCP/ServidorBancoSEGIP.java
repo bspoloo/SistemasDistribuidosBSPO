@@ -35,7 +35,7 @@ public class ServidorBancoSEGIP {
                 System.out.println("El cliente mando el protocolo -> "+recibido);
                 String protocolo = recibido.split(":")[0];
                 String data = recibido.split(":")[1];
-                String ci = recibido.split("-")[0];
+                String ci = data.split("-")[0];
                 String nombres = data.split("-")[1];
                 String apellidos = data.split("-")[2];
                 String resultado = "resultado:";

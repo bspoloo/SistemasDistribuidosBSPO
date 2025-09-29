@@ -24,8 +24,8 @@ public class ClienteBancoBCP {
             System.out.println("ci: " + ci);
             System.out.println("nombres: " + nombres);
             System.out.println("apellidos: " + apellidos);
-
-            String ip = "localhost";
+            //10.8.221.222
+            String ip = "10.8.221.222";
             DatagramSocket socketUDP = new DatagramSocket();
             String data = "Buscar:" + ci + "-" + nombres + "-" + "-" + apellidos;
             byte[] mensaje = data.getBytes();
