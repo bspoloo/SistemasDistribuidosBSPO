@@ -17,11 +17,23 @@ import java.net.SocketException;
 public class ClienteBancosUPD {
 
     public static String consultarCuentas(String ci, String nombres, String apellidos) {
-        
-        String cuentasBancoBCP = ClienteBancoBCP.consultarCuentas(ci, nombres, apellidos);
-        String cuentasBancoMercantil = ClienteBancoMercantil.consultarCuentas(ci, nombres, apellidos);
-        return cuentasBancoBCP+":"+cuentasBancoMercantil;
+        String cuentasBancoBCP = "";
+        String cuentasBancoMercantil = "";
+
+        try {
+            cuentasBancoMercantil = ClienteBancoMercantil.consultarCuentas(ci, nombres, apellidos);
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        try {
+            cuentasBancoBCP = ClienteBancoBCP.consultarCuentas(ci, nombres, apellidos);
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+        return cuentasBancoBCP + ":" + cuentasBancoMercantil;
     }
+
     public static void main(String[] args) {
         String ci = "11021654";
         String nombres = "Juan Perez";

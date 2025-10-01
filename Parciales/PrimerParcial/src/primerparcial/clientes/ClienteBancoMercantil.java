@@ -16,7 +16,7 @@ import java.net.SocketException;
  */
 public class ClienteBancoMercantil {
     public static String consultarCuentas(String ci, String nombres, String apellidos) {
-        int port1 = 1199;
+        int port1 = 6060;
         
         try {
             System.out.println("------CLIENTE BANCO MERCANTIL-----");
@@ -24,7 +24,7 @@ public class ClienteBancoMercantil {
             System.out.println("nombres: " + nombres);
             System.out.println("apellidos: " + apellidos);
 
-            String ip = "10.221.246.225";
+            String ip = "26.5.198.9";
             DatagramSocket socketUDP = new DatagramSocket();
             String data = "Buscar:" + ci + "-" + nombres + "-" + "-" + apellidos;
             byte[] mensaje = data.getBytes();
@@ -52,7 +52,7 @@ public class ClienteBancoMercantil {
         
     }
     public static void main(String[] args) {
-        int port1 = 1199;
+        int port1 = 6060;
         String ci = "11021654";
         String nombres = "Juan Perez";
         String apellidos = "Segovia";
@@ -62,7 +62,7 @@ public class ClienteBancoMercantil {
             System.out.println("nombres: " + nombres);
             System.out.println("apellidos: " + apellidos);
 
-            String ip = "10.221.246.225";
+            String ip = "26.5.198.9";
             DatagramSocket socketUDP = new DatagramSocket();
             String data = "Buscar:" + ci + "-" + nombres + "-" + "-" + apellidos;
             byte[] mensaje = data.getBytes();

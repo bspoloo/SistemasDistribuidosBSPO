@@ -23,7 +23,7 @@ public class ClienteSEGIP {
         int port = 5551;
         try {
             System.out.println("------CLIENTE BANCO SEGIP------------");
-            Socket client = new Socket("10.221.246.187", port);
+            Socket client = new Socket("[2800:cd0:cf99:5800:2e0:4cff:fe3c:aa6e]", port);
             String data = "Buscar:" + ci + "-" + nombres + "-" + apellidos;
             PrintStream toServer = new PrintStream(client.getOutputStream());
             BufferedReader fromServer = new BufferedReader(new InputStreamReader(client.getInputStream()));
@@ -36,6 +36,27 @@ public class ClienteSEGIP {
         } catch (IOException e) {
             System.out.println(e.getMessage());
             return "Error " + e.getMessage();
+        }
+    }
+
+    public static void main(String[] args) {
+        int port = 5551;
+        String ci = "11021654";
+        String nombres = "Juan Perez";
+        String apellidos = "Segovia";
+        try {
+            System.out.println("------CLIENTE BANCO SEGIP------------");
+            Socket client = new Socket("[2800:cd0:cf99:5800:2e0:4cff:fe3c:aa6e]", port);
+            String data = "Buscar:" + ci + "-" + nombres + "-" + apellidos;
+            PrintStream toServer = new PrintStream(client.getOutputStream());
+            BufferedReader fromServer = new BufferedReader(new InputStreamReader(client.getInputStream()));
+
+            toServer.println(data);
+            String result = fromServer.readLine();
+            System.out.println("Resultado es: " + result);
+
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
         }
     }
 }

@@ -39,7 +39,7 @@ public class Justicia extends UnicastRemoteObject implements IJusticia {
                 Cuenta cuenta = new Cuenta(ci, nombres, apellidos, nro_cuenta, Double.parseDouble(saldo), Banco.BancoBCP);
                 cuentas.add(cuenta);
             }
-            Respuesta response = new Respuesta(true, apellidos, cuentas);
+            Respuesta response = new Respuesta(true, null, cuentas);
             return response;
         } else {
             return new Respuesta(false, "Error usuario con ci " + ci + " no encontrado", null);
