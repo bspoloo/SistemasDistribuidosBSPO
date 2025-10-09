@@ -1,0 +1,12 @@
+D:\Ciencias\SistemasDistribuidosBSPO\Tareas en clase\VentasSOAP\ClientVentas\ClientVentas\bin\Debug\ClientVentas.exe.config
+D:\Ciencias\SistemasDistribuidosBSPO\Tareas en clase\VentasSOAP\ClientVentas\ClientVentas\bin\Debug\ClientVentas.exe
+D:\Ciencias\SistemasDistribuidosBSPO\Tareas en clase\VentasSOAP\ClientVentas\ClientVentas\bin\Debug\ClientVentas.pdb
+D:\Ciencias\SistemasDistribuidosBSPO\Tareas en clase\VentasSOAP\ClientVentas\ClientVentas\obj\Debug\ClientVentas.csproj.AssemblyReference.cache
+D:\Ciencias\SistemasDistribuidosBSPO\Tareas en clase\VentasSOAP\ClientVentas\ClientVentas\obj\Debug\ClientVentas.FormCotizacion.resources
+D:\Ciencias\SistemasDistribuidosBSPO\Tareas en clase\VentasSOAP\ClientVentas\ClientVentas\obj\Debug\ClientVentas.Properties.Resources.resources
+D:\Ciencias\SistemasDistribuidosBSPO\Tareas en clase\VentasSOAP\ClientVentas\ClientVentas\obj\Debug\ClientVentas.csproj.GenerateResource.cache
+D:\Ciencias\SistemasDistribuidosBSPO\Tareas en clase\VentasSOAP\ClientVentas\ClientVentas\obj\Debug\ClientVentas.csproj.CoreCompileInputs.cache
+D:\Ciencias\SistemasDistribuidosBSPO\Tareas en clase\VentasSOAP\ClientVentas\ClientVentas\obj\Debug\ClientVentas.exe
+D:\Ciencias\SistemasDistribuidosBSPO\Tareas en clase\VentasSOAP\ClientVentas\ClientVentas\obj\Debug\ClientVentas.pdb
+D:\Ciencias\SistemasDistribuidosBSPO\Tareas en clase\VentasSOAP\ClientVentas\ClientVentas\obj\Debug\ClientVentas.exe.config
+D:\Ciencias\SistemasDistribuidosBSPO\Tareas en clase\VentasSOAP\ClientVentas\ClientVentas\obj\Debug\ClientVentas.FormResponse.resources

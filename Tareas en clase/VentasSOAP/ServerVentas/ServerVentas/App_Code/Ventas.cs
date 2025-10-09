@@ -15,91 +15,81 @@ using System.Web.Services;
 // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
 // [System.Web.Script.Services.ScriptService]
 public class Ventas : System.Web.Services.WebService
-{   
-    private MySqlConnection connection;
-    private String ConnectionString = ConfigurationManager.ConnectionStrings["MysqlConnection"].ConnectionString;
+{
+    private CotizacionDAO cotizacionDAO;
     public Ventas()
     {
-        this.connection = new MySqlConnection(this.ConnectionString);
+        this.cotizacionDAO = new CotizacionDAO(ConfigurationManager.ConnectionStrings["MysqlConnection"].ConnectionString);
     }
 
     [WebMethod]
-    public Cotizacion ObtenerCotizacion(String fecha)
+    public CotizacionOutDTO<Cotizacion> ObtenerCotizacionByFecha(String fecha)
     {
-        Cotizacion cotizacion = null;
         try
         {
-            connection.Open();
-            String query = "SELECT * FROM cotizaciones WHERE fecha = @fecha";
-            MySqlCommand cmd = new MySqlCommand(query, connection);
-            cmd.Parameters.AddWithValue("@fecha", fecha);
-            using(MySqlDataReader reader = cmd.ExecuteReader() )
-            {
-                if(reader.Read())
-                {
-                    cotizacion = new Cotizacion
-                    {
-                        Fecha = reader.GetDateTime("fecha"),
-                        CotizacionActual = reader.GetFloat("cotizacion"),
-                        CotizacionOficial = reader.GetFloat("cotizacion_oficial")
-                    };
-                }
-            }
-        }
-        catch(Exception ex)
+            Cotizacion cotizacion = this.cotizacionDAO.GetCotizacionByFecha(fecha);
+            return new CotizacionOutDTO<Cotizacion>(
+                "Cotizacion traida correctamente",
+                200,
+                cotizacion
+            );
+        }catch(Exception ex)
         {
-            // En caso de error, puedes registrar el error o lanzar una excepción
-            throw new Exception("Error al obtener cotización: " + ex.Message);
+            return new CotizacionOutDTO<Cotizacion>(
+                "Error en traer cotizacion: "+ex.Message,
+                404,
+                null
+             );
         }
-        return cotizacion;
     }
 
     [WebMethod]
-    public List<Cotizacion> ObtenerCotizaciones()
+    public CotizacionOutDTO<List<Cotizacion>> ObtenerCotizaciones()
     {
-        List<Cotizacion> cotizaciones = new List<Cotizacion>();
-        using (MySqlConnection connection = new MySqlConnection(this.ConnectionString))
-        {
-            connection.Open();
-            string query = "SELECT * FROM cotizaciones";
-            MySqlCommand cmd = new MySqlCommand(query, connection);
-            using (MySqlDataReader reader = cmd.ExecuteReader())
-            {
-                while (reader.Read())
-                {
-                    cotizaciones.Add(new Cotizacion
-                    {
-                        Fecha = reader.GetDateTime("fecha"),
-                        CotizacionActual = reader.GetFloat("cotizacion"),
-                        CotizacionOficial = reader.GetFloat("cotizacion_oficial")
-                    });
-                }
-            }
-        }
-        return cotizaciones;
-    }
-    [WebMethod]
-    public List<Cotizacion> RegistrarCotizaciones(DateTime Fecha, float Cotizacion, float CotizacionOficial)
-    {
-        List<Cotizacion> cotizaciones = new List<Cotizacion>();
-
         try
         {
-            connection.Open();
-            
-            String query = "INSERT INTO cotizaciones (fecha, cotizacion, cotizacion_oficial) VALUES (@fecha, @cotizacion, @cotizacion_oficial)";
-            MySqlCommand cmd = new MySqlCommand(query, connection);
-            cmd.Parameters.AddWithValue("@fecha", Fecha);
-            cmd.Parameters.AddWithValue("@cotizacion", Cotizacion);
-            cmd.Parameters.AddWithValue("@cotizacion_oficial", CotizacionOficial);
-            cmd.ExecuteNonQuery();
-            cotizaciones = this.ObtenerCotizaciones();
+            List<Cotizacion> cotizaciones = this.cotizacionDAO.getAllCotizaciones();
+            return new CotizacionOutDTO<List<Cotizacion>>(
+                "Cotizaciones traidos correctamente",
+                200,
+                cotizaciones
+            );
         }
         catch (Exception ex)
         {
-            // En caso de error, puedes registrar el error o lanzar una excepción
-            throw new Exception("Error al obtener cotización: " + ex.Message);
+            return new CotizacionOutDTO<List<Cotizacion>>(
+                "Error en traer cotizaciones " + ex.Message,
+                404,
+                null
+             );
         }
-        return cotizaciones;
+    }
+
+    [WebMethod]
+    public CotizacionOutDTO<bool> RegistrarCotizaciones(DateTime fecha, float cotizacion, float cotizacionOficial)
+    {
+        try
+        {
+            Cotizacion cotizacionCreate = new Cotizacion
+            {
+                Fecha = fecha,
+                CotizacionActual = cotizacion,
+                CotizacionOficial = cotizacionOficial,
+            };
+            bool result = this.cotizacionDAO.createCotizacion(cotizacionCreate);
+            return new CotizacionOutDTO<bool>(
+                "Cotizacion creada correctamente",
+                200,
+                result
+            );
+        }
+        catch (Exception ex)
+        {
+            return new CotizacionOutDTO<bool>(
+                "Error en crear cotizacion: " + ex.Message,
+                404,
+                false
+             );
+        }
     }
 }

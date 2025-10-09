@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\ventassoap\\clientventas\\clientventas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|solutionrelative:clientventas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\ventassoap\\clientventas\\clientventas\\formcotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|solutionrelative:clientventas\\formcotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\ventassoap\\clientventas\\clientventas\\formcotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|solutionrelative:clientventas\\formcotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\ventassoap\\clientventas\\clientventas\\formresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|solutionrelative:clientventas\\formresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\ventassoap\\clientventas\\clientventas\\formresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|solutionrelative:clientventas\\formresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\ventassoap\\clientventas\\clientventas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|solutionrelative:clientventas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\ventassoap\\clientventas\\clientventas\\dtos\\cotizacionoutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|solutionrelative:clientventas\\dtos\\cotizacionoutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\ventassoap\\clientventas\\clientventas\\dtos\\cotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|solutionrelative:clientventas\\dtos\\cotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\ventassoap\\clientventas\\clientventas\\formcotizacion.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|solutionrelative:clientventas\\formcotizacion.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\ventassoap\\clientventas\\clientventas\\formcotizacion.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|solutionrelative:clientventas\\formcotizacion.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\clientventas\\cotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{276BA487-9E0D-4B54-B545-0BE9D1A05E2F}|ClientVentas\\ClientVentas.csproj|solutionrelative:clientventas\\cotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,15 +70,129 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormResponse.cs",
+              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\FormResponse.cs",
+              "RelativeDocumentMoniker": "ClientVentas\\FormResponse.cs",
+              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\FormResponse.cs",
+              "RelativeToolTip": "ClientVentas\\FormResponse.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowBIAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T01:26:04.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormResponse.cs [Design]",
+              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\FormResponse.cs",
+              "RelativeDocumentMoniker": "ClientVentas\\FormResponse.cs",
+              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\FormResponse.cs [Design]",
+              "RelativeToolTip": "ClientVentas\\FormResponse.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T01:24:09.829Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CotizacionOutDTO.cs",
+              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\Dtos\\CotizacionOutDTO.cs",
+              "RelativeDocumentMoniker": "ClientVentas\\Dtos\\CotizacionOutDTO.cs",
+              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\Dtos\\CotizacionOutDTO.cs",
+              "RelativeToolTip": "ClientVentas\\Dtos\\CotizacionOutDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T01:03:10.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cotizacion.cs",
+              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\Dtos\\Cotizacion.cs",
+              "RelativeDocumentMoniker": "ClientVentas\\Dtos\\Cotizacion.cs",
+              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\Dtos\\Cotizacion.cs",
+              "RelativeToolTip": "ClientVentas\\Dtos\\Cotizacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T01:02:34.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Cotizacion.cs",
+              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\Cotizacion.cs",
+              "RelativeDocumentMoniker": "ClientVentas\\Cotizacion.cs",
+              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\Cotizacion.cs",
+              "RelativeToolTip": "ClientVentas\\Cotizacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T21:54:08.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormCotizacion.resx",
+              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\FormCotizacion.resx",
+              "RelativeDocumentMoniker": "ClientVentas\\FormCotizacion.resx",
+              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\FormCotizacion.resx",
+              "RelativeToolTip": "ClientVentas\\FormCotizacion.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-10-09T21:45:25.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\Form1.cs",
-              "RelativeDocumentMoniker": "ClientVentas\\Form1.cs",
-              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\Form1.cs [Design]",
-              "RelativeToolTip": "ClientVentas\\Form1.cs [Design]",
+              "Title": "FormCotizacion.cs",
+              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\FormCotizacion.cs",
+              "RelativeDocumentMoniker": "ClientVentas\\FormCotizacion.cs",
+              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\FormCotizacion.cs",
+              "RelativeToolTip": "ClientVentas\\FormCotizacion.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAUwEwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T21:45:15.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormCotizacion.Designer.cs",
+              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\FormCotizacion.Designer.cs",
+              "RelativeDocumentMoniker": "ClientVentas\\FormCotizacion.Designer.cs",
+              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\FormCotizacion.Designer.cs",
+              "RelativeToolTip": "ClientVentas\\FormCotizacion.Designer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T21:44:58.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormCotizacion.cs [Design]",
+              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\FormCotizacion.cs",
+              "RelativeDocumentMoniker": "ClientVentas\\FormCotizacion.cs",
+              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\FormCotizacion.cs [Design]",
+              "RelativeToolTip": "ClientVentas\\FormCotizacion.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T21:44:49.922Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\Program.cs",
+              "RelativeDocumentMoniker": "ClientVentas\\Program.cs",
+              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ClientVentas\\ClientVentas\\Program.cs",
+              "RelativeToolTip": "ClientVentas\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T01:04:03.076Z",
+              "EditorCaption": ""
             }
           ]
         }

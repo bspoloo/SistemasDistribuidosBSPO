@@ -48,22 +48,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\CotizacionService\Reference.cs">
+    <Compile Include="Connected Services\CotizacionesService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Cotizacion.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Dtos\Cotizacion.cs" />
+    <Compile Include="Dtos\CotizacionOutDTO.cs" />
+    <Compile Include="FormCotizacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormCotizacion.Designer.cs">
+      <DependentUpon>FormCotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResponse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResponse.Designer.cs">
+      <DependentUpon>FormResponse.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormCotizacion.resx">
+      <DependentUpon>FormCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResponse.resx">
+      <DependentUpon>FormResponse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,19 +85,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Connected Services\CotizacionService\ClientVentas.CotizacionService.Cotizacion.datasource">
+    <None Include="Connected Services\CotizacionesService\ClientVentas.CotizacionesService.CotizacionOutDTOOfBoolean.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\CotizacionService\ClientVentas.CotizacionService.ObtenerCotizacionesResponse.datasource">
+    <None Include="Connected Services\CotizacionesService\ClientVentas.CotizacionesService.CotizacionOutDTOOfCotizacion.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\CotizacionService\ClientVentas.CotizacionService.ObtenerCotizacionResponse.datasource">
+    <None Include="Connected Services\CotizacionesService\ClientVentas.CotizacionesService.CotizacionOutDTOOfListOfCotizacion.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\CotizacionService\ClientVentas.CotizacionService.RegistrarCotizacionesResponse.datasource">
+    <None Include="Connected Services\CotizacionesService\ClientVentas.CotizacionesService.ObtenerCotizacionByFechaResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\CotizacionService\Ventas.wsdl" />
+    <None Include="Connected Services\CotizacionesService\ClientVentas.CotizacionesService.ObtenerCotizacionesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CotizacionesService\ClientVentas.CotizacionesService.RegistrarCotizacionesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CotizacionesService\Ventas.wsdl" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -104,19 +121,19 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\CotizacionService\" />
+    <WCFMetadataStorage Include="Connected Services\CotizacionesService\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CotizacionService\Ventas.disco" />
+    <None Include="Connected Services\CotizacionesService\Ventas.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CotizacionService\configuration91.svcinfo" />
+    <None Include="Connected Services\CotizacionesService\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CotizacionService\configuration.svcinfo" />
+    <None Include="Connected Services\CotizacionesService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CotizacionService\Reference.svcmap">
+    <None Include="Connected Services\CotizacionesService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

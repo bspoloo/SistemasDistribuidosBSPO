@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="9386593e-401f-41fe-a782-6f46af4c979f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="4bb7b912-3ee3-4a88-bf8f-44cd2af994a7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,8 +22,8 @@
     <MetadataSource Address="http://localhost:63650/Ventas.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Ventas.wsdl" MetadataType="Wsdl" ID="66de45c1-58f6-4de5-8591-82f2b060bee7" SourceId="1" SourceUrl="http://localhost:63650/Ventas.asmx?wsdl" />
-    <MetadataFile FileName="Ventas.disco" MetadataType="Disco" ID="ddb93b0d-1e19-485f-b388-73f36aabb7bf" SourceId="1" SourceUrl="http://localhost:63650/Ventas.asmx?disco" />
+    <MetadataFile FileName="Ventas.wsdl" MetadataType="Wsdl" ID="f7f2fe8f-1746-4a9c-afa8-73e66d7d6309" SourceId="1" SourceUrl="http://localhost:63650/Ventas.asmx?wsdl" />
+    <MetadataFile FileName="Ventas.disco" MetadataType="Disco" ID="cd103c34-0b8d-4d4f-8e71-8fc67c2c12f4" SourceId="1" SourceUrl="http://localhost:63650/Ventas.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
