@@ -21,16 +21,16 @@ public class ClienteBancosUPD {
         String cuentasBancoMercantil = "";
 
         try {
+            cuentasBancoBCP = ClienteBancoBCP.consultarCuentas(ci, nombres, apellidos);
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+        try {
             cuentasBancoMercantil = ClienteBancoMercantil.consultarCuentas(ci, nombres, apellidos);
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
 
-        try {
-            cuentasBancoBCP = ClienteBancoBCP.consultarCuentas(ci, nombres, apellidos);
-        } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
-        }
         return cuentasBancoBCP + ":" + cuentasBancoMercantil;
     }
 

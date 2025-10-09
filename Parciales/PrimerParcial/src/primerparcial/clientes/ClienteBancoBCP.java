@@ -25,7 +25,7 @@ public class ClienteBancoBCP{
             System.out.println("nombres: " + nombres);
             System.out.println("apellidos: " + apellidos);
             //10.8.221.222
-            String ip = "[2800:cd0:166:9c77:f6f8:d7c5:c847:a1a8]";
+            String ip = "10.79.85.166";
             DatagramSocket socketUDP = new DatagramSocket();
             String data = "Buscar:" + ci + "-" + nombres + "-" + "-" + apellidos;
             byte[] mensaje = data.getBytes();
@@ -64,7 +64,7 @@ public class ClienteBancoBCP{
             System.out.println("nombres: " + nombres);
             System.out.println("apellidos: " + apellidos);
             //10.8.221.222
-            String ip = "[2800:cd0:166:9c77:f6f8:d7c5:c847:a1a8]";
+            String ip = "10.79.85.166";
             DatagramSocket socketUDP = new DatagramSocket();
             String data = "Buscar:" + ci + "-" + nombres + "-" + "-" + apellidos;
             byte[] mensaje = data.getBytes();

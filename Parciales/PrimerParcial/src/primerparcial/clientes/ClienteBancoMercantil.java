@@ -24,7 +24,7 @@ public class ClienteBancoMercantil {
             System.out.println("nombres: " + nombres);
             System.out.println("apellidos: " + apellidos);
 
-            String ip = "26.5.198.9";
+            String ip = "10.79.85.225";
             DatagramSocket socketUDP = new DatagramSocket();
             String data = "Buscar:" + ci + "-" + nombres + "-" + "-" + apellidos;
             byte[] mensaje = data.getBytes();

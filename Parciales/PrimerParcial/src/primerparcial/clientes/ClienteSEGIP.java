@@ -23,7 +23,7 @@ public class ClienteSEGIP {
         int port = 5551;
         try {
             System.out.println("------CLIENTE BANCO SEGIP------------");
-            Socket client = new Socket("[2800:cd0:cf99:5800:2e0:4cff:fe3c:aa6e]", port);
+            Socket client = new Socket("10.79.85.166", port);
             String data = "Buscar:" + ci + "-" + nombres + "-" + apellidos;
             PrintStream toServer = new PrintStream(client.getOutputStream());
             BufferedReader fromServer = new BufferedReader(new InputStreamReader(client.getInputStream()));
@@ -46,7 +46,7 @@ public class ClienteSEGIP {
         String apellidos = "Segovia";
         try {
             System.out.println("------CLIENTE BANCO SEGIP------------");
-            Socket client = new Socket("[2800:cd0:cf99:5800:2e0:4cff:fe3c:aa6e]", port);
+            Socket client = new Socket("10.79.85.166", port);
             String data = "Buscar:" + ci + "-" + nombres + "-" + apellidos;
             PrintStream toServer = new PrintStream(client.getOutputStream());
             BufferedReader fromServer = new BufferedReader(new InputStreamReader(client.getInputStream()));

@@ -4,15 +4,12 @@ import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.rmi.Naming;
 import primerparcial.clases.Cuenta;
 import primerparcial.clases.Respuesta;
 import primerparcial.interfaces.IJusticia;
 
-/**
- * Versión simplificada del cliente para la Justicia.
- * @author moka
- */
 public class Juez extends JFrame {
 
     // --- Componentes de la Interfaz ---
@@ -20,21 +17,22 @@ public class Juez extends JFrame {
     private final JTextField txtNombres;
     private final JTextField txtApellidos;
     private final JButton btnConsultar;
-    private final JTextArea areaResultados;
+
+    // En lugar de JTextArea -> JTable
+    private final JTable tablaResultados;
+    private final DefaultTableModel modeloTabla;
 
     public Juez() {
-        // --- 1. Configuración de la Ventana ---
         setTitle("Sistema de Consulta Judicial (Simple)");
-        setSize(500, 450);
+        setSize(600, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null); // Centrar la ventana
-        setLayout(new BorderLayout(10, 10)); // Usamos un layout principal
+        setLocationRelativeTo(null);
+        setLayout(new BorderLayout(10, 10));
 
-        // --- 2. Panel para los campos de entrada (arriba) ---
+        // --- Panel de entrada ---
         JPanel panelEntrada = new JPanel(new GridLayout(3, 2, 5, 5));
-        panelEntrada.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10)); // Margen
+        panelEntrada.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
-        // Añadimos etiquetas y campos de texto
         panelEntrada.add(new JLabel("CI:"));
         txtCi = new JTextField("11021654");
         panelEntrada.add(txtCi);
@@ -46,65 +44,67 @@ public class Juez extends JFrame {
         panelEntrada.add(new JLabel("Apellidos:"));
         txtApellidos = new JTextField("Segovia");
         panelEntrada.add(txtApellidos);
-        
-        // --- 3. Botón de consulta (abajo) ---
+
+        // --- Botón ---
         btnConsultar = new JButton("Consultar");
         JPanel panelBoton = new JPanel();
         panelBoton.add(btnConsultar);
 
-        // --- 4. Área para mostrar resultados (centro) ---
-        areaResultados = new JTextArea();
-        areaResultados.setEditable(false);
-        JScrollPane scrollPane = new JScrollPane(areaResultados); // Para añadir barra de scroll
+        // --- Tabla ---
+        String[] columnas = {"Banco", "Nro Cuenta", "Saldo"};
+        modeloTabla = new DefaultTableModel(columnas, 0); // 0 filas iniciales
+        tablaResultados = new JTable(modeloTabla);
+        JScrollPane scrollPane = new JScrollPane(tablaResultados);
 
-        // --- 5. Añadimos los paneles a la ventana ---
+        // --- Añadir componentes a la ventana ---
         add(panelEntrada, BorderLayout.NORTH);
         add(scrollPane, BorderLayout.CENTER);
         add(panelBoton, BorderLayout.SOUTH);
 
-        // --- 6. Lógica del Botón (la acción a realizar) ---
+        // --- Acción del botón ---
         btnConsultar.addActionListener((ActionEvent e) -> {
             consultar();
         });
     }
-    
+
     private void consultar() {
-        areaResultados.setText("Consultando, por favor espere...");
-        
+        // Limpiamos la tabla antes de cada consulta
+        modeloTabla.setRowCount(0);
+
         try {
-            // Obtenemos los datos de la interfaz
             String ci = txtCi.getText();
             String nombres = txtNombres.getText();
             String apellidos = txtApellidos.getText();
 
-            // Buscamos el servicio RMI en el servidor
             IJusticia justicia = (IJusticia) Naming.lookup("rmi://localhost/justicia");
-            
-            // Llamamos al método remoto
             Respuesta respuesta = justicia.consultarCuentas(ci, nombres, apellidos);
 
-            // Procesamos y mostramos la respuesta en el JTextArea
             if (!respuesta.isError() && respuesta.getCuentas() != null && !respuesta.getCuentas().isEmpty()) {
-                StringBuilder resultadoTexto = new StringBuilder("--- Cuentas Encontradas ---\n\n");
                 for (Cuenta cuenta : respuesta.getCuentas()) {
-                    resultadoTexto.append("Banco: ").append(cuenta.getBanco())
-                                  .append(" | Cuenta: ").append(cuenta.getNro_cuenta())
-                                  .append(" | Saldo: ").append(cuenta.getSaldo()).append("\n");
+                    Object[] fila = {
+                        cuenta.getBanco(),
+                        cuenta.getNro_cuenta(),
+                        cuenta.getSaldo()
+                    };
+                    modeloTabla.addRow(fila);
                 }
-                areaResultados.setText(resultadoTexto.toString());
             } else {
-                areaResultados.setText("Respuesta del servidor:\n" + respuesta.getMensajeError());
+                JOptionPane.showMessageDialog(this,
+                        "Respuesta del servidor:\n" + respuesta.getMensajeError(),
+                        "Sin resultados",
+                        JOptionPane.WARNING_MESSAGE);
             }
 
         } catch (Exception ex) {
-            // Si algo falla (red, servidor no encontrado, etc.), mostramos el error
-            areaResultados.setText("ERROR DE CONEXIÓN:\n" + ex.getMessage());
+            JOptionPane.showMessageDialog(this,
+                    "ERROR DE CONEXIÓN:\n" + ex.getMessage(),
+                    "Error",
+                    JOptionPane.ERROR_MESSAGE);
             ex.printStackTrace();
         }
     }
 
     public static void main(String[] args) {
-        // Crea y muestra la ventana de forma segura
         SwingUtilities.invokeLater(() -> new Juez().setVisible(true));
     }
 }
