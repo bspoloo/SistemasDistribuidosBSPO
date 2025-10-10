@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ObtenerCotizacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fecha" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerCotizacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerCotizacionResult" type="tns:Cotizacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Cotizacion">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Fecha" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CotizacionActual" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="CotizacionOficial" type="s:float" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ObtenerCotizaciones">
+        <s:complexType />
+      </s:element>
+      <s:element name="ObtenerCotizacionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerCotizacionesResult" type="tns:ArrayOfCotizacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCotizacion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Cotizacion" nillable="true" type="tns:Cotizacion" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RegistrarCotizaciones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Fecha" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="Cotizacion" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="CotizacionOficial" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistrarCotizacionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegistrarCotizacionesResult" type="tns:ArrayOfCotizacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ObtenerCotizacionSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerCotizacion" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCotizacionSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerCotizacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCotizacionesSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerCotizaciones" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCotizacionesSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerCotizacionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegistrarCotizacionesSoapIn">
+    <wsdl:part name="parameters" element="tns:RegistrarCotizaciones" />
+  </wsdl:message>
+  <wsdl:message name="RegistrarCotizacionesSoapOut">
+    <wsdl:part name="parameters" element="tns:RegistrarCotizacionesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="VentasSoap">
+    <wsdl:operation name="ObtenerCotizacion">
+      <wsdl:input message="tns:ObtenerCotizacionSoapIn" />
+      <wsdl:output message="tns:ObtenerCotizacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCotizaciones">
+      <wsdl:input message="tns:ObtenerCotizacionesSoapIn" />
+      <wsdl:output message="tns:ObtenerCotizacionesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarCotizaciones">
+      <wsdl:input message="tns:RegistrarCotizacionesSoapIn" />
+      <wsdl:output message="tns:RegistrarCotizacionesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VentasSoap" type="tns:VentasSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObtenerCotizacion">
+      <soap:operation soapAction="http://tempuri.org/ObtenerCotizacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCotizaciones">
+      <soap:operation soapAction="http://tempuri.org/ObtenerCotizaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarCotizaciones">
+      <soap:operation soapAction="http://tempuri.org/RegistrarCotizaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VentasSoap12" type="tns:VentasSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObtenerCotizacion">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerCotizacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCotizaciones">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerCotizaciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarCotizaciones">
+      <soap12:operation soapAction="http://tempuri.org/RegistrarCotizaciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Ventas">
+    <wsdl:port name="VentasSoap" binding="tns:VentasSoap">
+      <soap:address location="http://localhost:63650/Ventas.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VentasSoap12" binding="tns:VentasSoap12">
+      <soap12:address location="http://localhost:63650/Ventas.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
