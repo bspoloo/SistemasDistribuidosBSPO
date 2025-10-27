@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\serverventas\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|solutionrelative:serverventas\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\serverventas\\app_code\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|solutionrelative:serverventas\\app_code\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\serverventas\\app_code\\entity\\cotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|solutionrelative:serverventas\\app_code\\entity\\cotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\ventassoap\\serverventas\\serverventas\\app_code\\dao\\cotizaciondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|solutionrelative:serverventas\\app_code\\dao\\cotizaciondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\ventassoap\\serverventas\\serverventas\\app_code\\dto\\cotizacionoutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\serverventas\\app_code\\dto\\cotizacionoutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|solutionrelative:serverventas\\app_code\\dto\\cotizacionoutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\ventassoap\\serverventas\\serverventas\\app_code\\entity\\cotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|solutionrelative:serverventas\\app_code\\entity\\cotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\ventassoap\\serverventas\\serverventas\\app_code\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|solutionrelative:serverventas\\app_code\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\serverventas\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|solutionrelative:serverventas\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BA09D9F-2CE6-2A84-26FE-DE6CE5974F7E}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\serverventas\\ventas.asmx||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "CotizacionOutDTO.cs",
               "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\App_Code\\DTO\\CotizacionOutDTO.cs",
               "RelativeDocumentMoniker": "ServerVentas\\App_Code\\DTO\\CotizacionOutDTO.cs",
@@ -71,53 +71,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CotizacionDAO.cs",
               "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\App_Code\\DAO\\CotizacionDAO.cs",
               "RelativeDocumentMoniker": "ServerVentas\\App_Code\\DAO\\CotizacionDAO.cs",
               "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\App_Code\\DAO\\CotizacionDAO.cs",
               "RelativeToolTip": "ServerVentas\\App_Code\\DAO\\CotizacionDAO.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAswEwAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAgwGMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-15T23:59:20.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Ventas.asmx",
-              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\Ventas.asmx",
-              "RelativeDocumentMoniker": "ServerVentas\\Ventas.asmx",
-              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\Ventas.asmx",
-              "RelativeToolTip": "ServerVentas\\Ventas.asmx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003504|",
-              "WhenOpened": "2025-10-09T21:38:48.491Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "packages.config",
-              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\packages.config",
-              "RelativeDocumentMoniker": "ServerVentas\\packages.config",
-              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\packages.config",
-              "RelativeToolTip": "ServerVentas\\packages.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-09T21:38:45.258Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\Web.config",
-              "RelativeDocumentMoniker": "ServerVentas\\Web.config",
-              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\Web.config",
-              "RelativeToolTip": "ServerVentas\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-09T21:01:07.482Z",
               "EditorCaption": ""
             },
             {
@@ -135,15 +97,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Ventas.cs",
               "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\App_Code\\Ventas.cs",
               "RelativeDocumentMoniker": "ServerVentas\\App_Code\\Ventas.cs",
               "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\App_Code\\Ventas.cs",
               "RelativeToolTip": "ServerVentas\\App_Code\\Ventas.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACcAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAB5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T20:27:24.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "packages.config",
+              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\packages.config",
+              "RelativeDocumentMoniker": "ServerVentas\\packages.config",
+              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\packages.config",
+              "RelativeToolTip": "ServerVentas\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-09T21:38:45.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ventas.asmx",
+              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\Ventas.asmx",
+              "RelativeDocumentMoniker": "ServerVentas\\Ventas.asmx",
+              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\Ventas.asmx",
+              "RelativeToolTip": "ServerVentas\\Ventas.asmx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003504|",
+              "WhenOpened": "2025-10-09T21:38:48.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\Web.config",
+              "RelativeDocumentMoniker": "ServerVentas\\Web.config",
+              "ToolTip": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\VentasSOAP\\ServerVentas\\ServerVentas\\Web.config",
+              "RelativeToolTip": "ServerVentas\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-09T21:01:07.482Z",
               "EditorCaption": ""
             }
           ]

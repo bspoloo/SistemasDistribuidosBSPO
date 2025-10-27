@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{691A65BB-563B-15B1-77C2-73B0890C57AA}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\SOAP|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\soap\\app_code\\operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691A65BB-563B-15B1-77C2-73B0890C57AA}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\SOAP|solutionrelative:soap\\app_code\\operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{691A65BB-563B-15B1-77C2-73B0890C57AA}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\SOAP|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\operacionessoap\\soap\\soap\\operations.asmx||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}",
       "RelativeMoniker": "D:0:0:{691A65BB-563B-15B1-77C2-73B0890C57AA}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\SOAP|solutionrelative:soap\\operations.asmx||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{691A65BB-563B-15B1-77C2-73B0890C57AA}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\SOAP|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\operacionessoap\\soap\\soap\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{691A65BB-563B-15B1-77C2-73B0890C57AA}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\SOAP|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\soap\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{691A65BB-563B-15B1-77C2-73B0890C57AA}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\SOAP|solutionrelative:soap\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{691A65BB-563B-15B1-77C2-73B0890C57AA}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\SOAP|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\operacionessoap\\soap\\soap\\app_code\\operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{691A65BB-563B-15B1-77C2-73B0890C57AA}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\SOAP|solutionrelative:soap\\app_code\\operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{691A65BB-563B-15B1-77C2-73B0890C57AA}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\SOAP|d:\\ciencias\\sistemasdistribuidosbspo\\tareas en clase\\operacionessoap\\soap\\soap\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{691A65BB-563B-15B1-77C2-73B0890C57AA}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\SOAP|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\soap\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{691A65BB-563B-15B1-77C2-73B0890C57AA}|D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\SOAP|solutionrelative:soap\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,12 +54,11 @@
               "RelativeToolTip": "SOAP\\packages.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-09T08:59:26.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T08:59:26.293Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Web.config",
               "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\SOAP\\Web.config",
               "RelativeDocumentMoniker": "SOAP\\Web.config",
@@ -72,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Operations.asmx",
               "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\SOAP\\Operations.asmx",
               "RelativeDocumentMoniker": "SOAP\\Operations.asmx",
@@ -85,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Operations.cs",
               "DocumentMoniker": "D:\\Ciencias\\SistemasDistribuidosBSPO\\Tareas en clase\\OperacionesSOAP\\SOAP\\SOAP\\App_Code\\Operations.cs",
               "RelativeDocumentMoniker": "SOAP\\App_Code\\Operations.cs",
