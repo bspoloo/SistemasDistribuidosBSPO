@@ -22,6 +22,9 @@
 /Tareas/Tarea 5/clientes/cliente-java/build/
 /Tareas en clase/graphql-mysql/node_modules
 
+#todas las carpetas vendor, de cualquier proyecto
+vendor/
+
 # Visual Studio
 .vs/
 *.user
