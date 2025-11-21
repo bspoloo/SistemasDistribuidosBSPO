@@ -88,3 +88,5 @@ _ReSharper*/
 *.swp
 *.DS_Store
 Thumbs.db
+/Repasos/RepasoFinal/ejericio2/nbproject/private/
+/Repasos/RepasoFinal/Ejericio2/nbproject/private/
