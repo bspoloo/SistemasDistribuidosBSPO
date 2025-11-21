@@ -28,7 +28,7 @@ public class SeduInfoService : System.Web.Services.WebService
         {
             return new Response<Estudiante>()
             {
-                Message = "Estudiante traido correctamente",
+                Message = "Estudiante traido correctamente con CI: "+CI,
                 Status = 200,
                 Data = estudiante,
             };
@@ -51,7 +51,7 @@ public class SeduInfoService : System.Web.Services.WebService
         {
             return new Response<Tutor>()
             {
-                Message = "Estudiante traido correctamente",
+                Message = "Estudiante traido correctamente con CI: "+CI,
                 Status = 200,
                 Data = tutor,
             };

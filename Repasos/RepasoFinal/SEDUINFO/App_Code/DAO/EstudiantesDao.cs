@@ -23,10 +23,6 @@ public class EstudiantesDao
         this.estudiantes.Add(new Estudiante() { CI="87687667", Nombres="Maria Jose", Apellidos="Amurrio Palma", Carrera="Telecomunicaciones", Promedio=90.23});
         this.estudiantes.Add(new Estudiante() { CI="67676754", Nombres="Ana Lia", Apellidos="Paco Jorge", Carrera="Diseño", Promedio=23.434});
     }
-    public List<Estudiante> GetEstudiantes()
-    {
-        return this.estudiantes;
-    }
     public Estudiante ObtenerDatosAcademicos(String CI)
     {
         Estudiante estudianteFounded = null;

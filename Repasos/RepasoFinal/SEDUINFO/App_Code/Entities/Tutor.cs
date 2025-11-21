@@ -12,6 +12,7 @@ public class Tutor
     public String TutorAsignado { get; set; }
     public String CorreoTutor { get; set; }
     public String TelefonoTutor { get; set; }
+
     public Tutor()
     {
         //

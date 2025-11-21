@@ -8,11 +8,13 @@ using System.Web;
 /// </summary>
 public class Estudiante
 {
+
     public String CI { get; set; }
     public String Nombres { get; set; }
     public String Apellidos { get; set; }
     public String Carrera { get; set; }
     public double Promedio { get; set; }
+
 
     public Estudiante()
     {
