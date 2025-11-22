@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agenda GraphQL</title>
+    <script src="cliente.js"></script>
+</head>
+<body>
+    <h1>Agenda API - GraphQL Client</h1>
+    
+    <div id="login">
+        <h3>Login </h3>
+        Email: <input type="text" id="email" value="admin@test.com"><br><br>
+        Password: <input type="password" id="password" value="password123"><br><br>
+        <button onclick="login()">Login</button>
+    </div>
+    
+    <div id="personas" style="display:none">
+        <h3>Crear Persona </h3>
+        Nombres: <input type="text" id="nombres"><br><br>
+        Apellidos: <input type="text" id="apellidos"><br><br>
+        CI: <input type="text" id="ci"><br><br>
+        Email: <input type="text" id="personaEmail"><br><br>
+        <button onclick="crearPersonaGraphQL()">Crear con GraphQL</button>
+        
+        <h3>Lista de Personas </h3>
+        <button onclick="cargarPersonasGraphQL()">Cargar con GraphQL</button>
+        <div id="lista"></div>
+    </div>
+</body>
+
+</html>
