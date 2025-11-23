@@ -12,8 +12,8 @@ import java.rmi.RemoteException;
  * @author Animetx
  */
 public interface ICadena extends Remote {
-
-    boolean guardarFrase(String frase);
+    
+    boolean guardarFrase(String frase) throws RemoteException;
 
     String convertirMayusculas() throws RemoteException;
 

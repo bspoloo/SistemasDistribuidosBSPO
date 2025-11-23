@@ -22,7 +22,7 @@ public class Cadena extends UnicastRemoteObject implements ICadena {
     }
 
     @Override
-    public boolean guardarFrase(String frase) {
+    public boolean guardarFrase(String frase) throws RemoteException {
         if (frase.trim().isEmpty()) {
             return false;
         }
@@ -31,12 +31,12 @@ public class Cadena extends UnicastRemoteObject implements ICadena {
     }
 
     @Override
-    public String convertirMayusculas() {
+    public String convertirMayusculas() throws RemoteException {
         return this.cadena.toUpperCase();
     }
 
     @Override
-    public String duplicarEspacios(int n) {
+    public String duplicarEspacios(int n) throws RemoteException {
         String[] parts = this.cadena.split(" ");
         String newCadena = "";
         for (String part : parts) {
@@ -49,7 +49,7 @@ public class Cadena extends UnicastRemoteObject implements ICadena {
     }
 
     @Override
-    public String concatenar(String extra) {
+    public String concatenar(String extra) throws RemoteException {
         return this.cadena + extra;
     }
 }

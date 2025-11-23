@@ -19,8 +19,8 @@ import java.util.Scanner;
 public class Client {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Scanner scInt = new Scanner(System.in);
+        Scanner scannerText = new Scanner(System.in);
+        Scanner scannerNumber = new Scanner(System.in);
 
         try {
             ICadena cadena = (ICadena) Naming.lookup("rmi://localhost/cadenas"); // instanciar un objeto 
@@ -33,14 +33,15 @@ public class Client {
                 System.out.println("3.- Duplicar espacios");
                 System.out.println("4.- Concatenar");
                 System.out.println("5.- salir");
-                System.out.print("Elegir una opcion");
-                op = sc.nextInt();
+                System.out.println("Elegir una opcion");
+                op = scannerNumber.nextInt();
 
                 switch (op) {
                     case 1:
                         System.out.println("Introduzca la frase: ");
-                        frase = sc.nextLine();
-                        boolean response = cadena.guardarFrase(frase);
+                        String newfrase = scannerText.nextLine();
+                        
+                        boolean response = cadena.guardarFrase(newfrase);
                         if (response) {
                             System.out.println("Exito en guardar la frase");
                         } else {
@@ -54,14 +55,14 @@ public class Client {
                         break;
                     case 3:
                         System.out.println("Introduzca la cantidad de los espacios a duplicar: ");
-                        int n = scInt.nextInt();
+                        int n = scannerNumber.nextInt();
 
                         frase = cadena.duplicarEspacios(n);
                         System.out.println("Su frase duplicada es: " + frase);
                         break;
                     case 4:
                         System.out.println("Introduzca el extra: ");
-                        frase = sc.nextLine();
+                        frase = scannerText.nextLine();
                         String concatenado = cadena.concatenar(frase);
                         System.out.println("El concatenado es: " + concatenado);
                         break;
