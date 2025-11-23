@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SEDUINFO", ".", "{E7292CD6-1CF3-2770-EE2B-674B5D6194DB}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57688"
+		Debug.AspNetCompiler.PhysicalPath = "..\SEDUINFO\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57688\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57688"
+		Release.AspNetCompiler.PhysicalPath = "..\SEDUINFO\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57688\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57688"
+		SlnRelativePath = "..\SEDUINFO\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7292CD6-1CF3-2770-EE2B-674B5D6194DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7292CD6-1CF3-2770-EE2B-674B5D6194DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E5A750C-2625-4DCB-A304-D153320AC457}
+	EndGlobalSection
+EndGlobal
